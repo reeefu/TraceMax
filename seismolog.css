@@ -1,0 +1,18 @@
+QPushButton#cmdButton {
+  background-color: #000080;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  text-align: center;
+  font-size: 12px; 
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+QPushButton#cmdButton::hover {
+  background-color: #3B86F2;
+}
+
+QPushButton#cmdButton::disabled {
+	background-color: gray;
+}

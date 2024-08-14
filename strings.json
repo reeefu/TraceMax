@@ -1,0 +1,50 @@
+{
+  "en":
+  {
+    "file":"&File",
+    "settings":"&Settings",
+	"tools": "&Tools",
+    "help":"&Help",
+    "open":"&Open",
+    "load":"&Open Configuration",
+    "restart":"$Restart",
+    "save":"&Save",
+    "close":"&Close",
+    "acq":"&Acquisition",
+    "ui":"&User Interface",
+    "dev":"&Device Settings",
+    "savecfg":"&Save Configuration",
+    "doc":"&Usage Instruction",
+    "about":"&About",
+    "acqbtn":"ACQUIRE",
+    "clrbtn":"CLEAR",
+    "savbtn":"SAVE",
+    "stopbtn":"STOP",
+    "docpath":"doc",
+	"ctrdrop":"Droppe&r Control"
+  },
+  "id":
+  {
+    "file":"&Berkas",
+    "settings":"&Pengaturan",
+	"tools": "&Perangkat",
+    "help":"&Penggunaan",
+    "open":"&Buka",
+    "load":"&Buka Konfigurasi",
+    "restart":"Muat &Ulang",
+    "save":"&Simpan",
+    "close":"&Tutup",
+    "acq":"&Akuisisi",
+    "ui":"&Antarmuka Pengguna",
+    "dev":"&Pengaturan Piranti",
+    "savecfg":"&Simpan Konfigurasi",
+    "doc":"&Instruksi Penggunaan",
+    "about":"&Tentang Program",
+    "acqbtn":"AKUISISI",
+    "clrbtn":"SAPU",
+    "savbtn":"SIMPAN",
+    "stopbtn":"STOP",
+    "docpath":"doc-id",
+	"ctrdrop":"Penjatuh Beban"
+  }
+}
