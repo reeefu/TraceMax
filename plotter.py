@@ -1,9 +1,9 @@
 #---------------------------------
 # Seismic Instrument Qt Application
 #
-# Trace Editor
+# Trace Editor (New Version, plugin enalbled)
 #
-# (c) 2022, Rosandi
+# (c) 2024, Rosandi
 #
 # rosandi@geophys.unpad.ac.id
 #
