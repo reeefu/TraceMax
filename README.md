@@ -9,10 +9,7 @@ Licensed under the [GNU General Public License v3](LICENSE)
 
 ## Screenshots
 
-<!-- Add a screenshot or GIF of the application here -->
-<!-- ![TraceMax UI](docs/screenshot.png) -->
-
-*Screenshots coming soon.*
+![TraceMax UI](docs/Screenshot.png)
 
 ---
 
