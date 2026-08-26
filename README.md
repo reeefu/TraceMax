@@ -1,8 +1,8 @@
-# TraceMax — SeismoLog Trace Editor
+# TraceMax
 
 A PyQt5 desktop application for seismic trace visualization, editing, filtering, first-break picking, and refraction analysis.
 
-© 2022–2026 Rosandi & Arief Ritonga — Universitas Padjadjaran  
+© 2022–2026 Rosandi & Arief Ritonga, Universitas Padjadjaran  
 Licensed under the [GNU General Public License v3](LICENSE)
 
 ---
@@ -40,7 +40,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-### Optional — ML Auto-Picker plugin
+### Optional - ML Auto-Picker plugin
 
 The ML plugin requires PyTorch and trained model weights:
 
@@ -112,7 +112,7 @@ src/
 ├── config.py                 # Config dict, CLI parsing, asset loading
 ├── app/
 │   ├── __init__.py
-│   ├── mainwindow.py         # Main window — menus, layout, plugin loading
+│   ├── mainwindow.py         # Main window
 │   ├── toolbar.py            # Top control panel (PICK/VIEW/FILTER/ZOOM)
 │   ├── dialogs.py            # Help, FFT, and info dialogs
 │   ├── arrival_dialog.py     # Arrival time table dialog
@@ -133,7 +133,7 @@ src/
 │   └── seiswidgets.py        # Reusable PyQt5 widget helpers
 ├── plugin/
 │   ├── __init__.py           # Plugin discovery system
-│   └── ml_picker/            # ML auto-picker plugin (requires torch)
+│   └── ml_picker/            # ML auto-picker plugin
 │       ├── __init__.py
 │       ├── README.md
 │       ├── lstm_base.py
