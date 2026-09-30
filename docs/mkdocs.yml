@@ -1,0 +1,99 @@
+site_name: TraceMax Dokumentasi
+site_description: Dokumentasi aplikasi TraceMax — visualisasi, editing, dan analisis seismik
+site_author: Rosandi & Arief Ritonga
+site_url: https://reeefu.github.io/TraceMax/
+
+repo_url: https://github.com/reeefu/TraceMax
+repo_name: reeefu/TraceMax
+
+copyright: © 2022–2026 Rosandi & Arief Ritonga, Universitas Padjadjaran
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+theme:
+  name: material
+  language: id
+  logo: logo.png
+  favicon: logo.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mode gelap
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mode terang
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: id
+          name: Bahasa Indonesia
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+
+nav:
+  - Home: index.md
+  - Memulai:
+      - Instalasi: getting-started/installation.md
+      - Panduan Cepat: getting-started/quick-start.md
+  - Panduan Pengguna:
+      - Antarmuka: user-guide/interface.md
+      - Format Data: user-guide/data-format.md
+      - Visualisasi & Navigasi: user-guide/visualization.md
+      - Filter: user-guide/filtering.md
+      - First-Break Picking: user-guide/picking.md
+      - Manajemen Waktu Tiba: user-guide/arrival-times.md
+      - Analisis Refraksi Hagiwara: user-guide/refraction-analysis.md
+      - Spektrum FFT: user-guide/fft-spectrum.md
+  - Lanjutan:
+      - Sistem Plugin: advanced/plugins.md
+      - Build Executable: advanced/build.md
+  - Pengembang:
+      - Struktur Proyek: developer/project-structure.md
+      - Membuat Plugin: developer/creating-plugins.md
+  - FAQ: faq.md
+  - Changelog: changelog.md

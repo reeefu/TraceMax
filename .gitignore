@@ -95,3 +95,6 @@ Thumbs.db
 
 # Debug/test artifacts at root
 /*.png
+
+# MkDocs build output
+docs/site/
