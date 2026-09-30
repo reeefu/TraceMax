@@ -1,0 +1,116 @@
+.hero {
+  text-align: center;
+  padding: 0.5rem 0 0.25rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  max-width: 560px;
+  margin: 0.25rem auto 1.25rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.hero-banner {
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 0.75rem;
+  display: block;
+}
+
+.md-content__inner:has(.hero) > h1,
+.md-content__inner > h1:has(+ .hero),
+.hero h1 {
+  display: none !important;
+}
+
+img,
+.md-content img,
+.md-typeset img {
+  filter: none !important;
+  opacity: 1 !important;
+  -webkit-filter: none !important;
+}
+
+[data-md-color-scheme="slate"] img,
+[data-md-color-scheme="slate"] .md-content img,
+[data-md-color-scheme="slate"] .md-typeset img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* ── Clickable & Compact Grid Cards ────────────────── */
+.md-typeset .grid.cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.6rem;
+  margin: 0.3rem 0 0.8rem;
+  padding: 0;
+}
+
+.md-typeset .grid.cards > ul > li {
+  position: relative;
+  cursor: pointer;
+  padding: 0.75rem 0.95rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background-color: var(--md-default-bg-color);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Stretched link: makes entire card clickable */
+.md-typeset .grid.cards > ul > li h3 a:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.4rem;
+}
+
+.md-typeset .grid.cards > ul > li .headerlink {
+  display: none !important;
+}
+
+.md-typeset .grid.cards > ul > li h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.md-typeset .grid.cards > ul > li h3 a {
+  color: var(--md-typeset-color);
+  text-decoration: none;
+}
+
+.md-typeset .grid.cards > ul > li:hover h3 a {
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset .grid.cards > ul > li p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.15rem;
+}
+
+.md-typeset hr {
+  margin: 0.9rem 0;
+}
